@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+/*-------------------------------General Styles---------------------------------------*/
+body {
+  background-color: rgb(16, 29, 46);
+  transition: 300ms linear;
+}
+h1,
+h2,
+h3 {
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  padding-left: 10px;
+}
+.heading {
+  margin: 10px;
+  padding: 0.4rem;
+  padding-left: 10px;
+  background-color: rgb(7, 14, 22);
+  border-radius: 25px;
+  border-width: thick;
+  border-color: white;
+}
+/*-------------------------------Card Styles---------------------------------------*/
+
+.cards {
+  margin: 0.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 13rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  border-width: thick;
+  border-color: grey;
+  box-shadow: rgba(7, 16, 26, 0.898) 0px 8px 24px;
+}
+.card-image {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  filter: brightness(95%);
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: 300ms linear;
+  filter: brightness(100%);
+}
+.card-title {
+  font-family: "Fredoka", sans-serif;
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+}
+/*-------------------------------Post Styles---------------------------------------*/
+
+.post {
+  font-family: "Fredoka", sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: rgb(7, 14, 22);
+  border-radius: 25px;
+  border-width: thick;
+  display: flex;
+  width: auto;
+}
+.posttitle {
+  font-size: 1.4rem;
+  color: white;
+}
+.postdate {
+  color: blue;
+}
+.postcontent {
+  color: grey;
+}
+.postpic img {
+  width: 90px;
+  height: auto;
+  border-radius: 30px;
+  border-width: thick;
+  border-color: aliceblue;
+  padding: 1rem;
+}
+/*-------------------------------Trending Styles---------------------------------------*/
+.trending {
+  margin-bottom: 1rem;
+  background-color: rgb(7, 14, 22);
+  padding: 1rem;
+  border-radius: 25px;
+  border-width: thick;
+}
+.trending-list {
+  padding: 1rem;
+}
+.trending-list hr {
+  color: grey;
+}
+.trending-list-items {
+  display: flex;
+}
+.arrow {
+  text-align: right;
+}
+/*------------------------------------Recent Styles--------------------------------------------*/
+.recent {
+  background-color: rgb(7, 14, 22);
+  padding: 1rem;
+  border-radius: 25px;
+  border-width: thick;
+}
+.recent-post {
+  padding: 0.5rem;
+  display: flex;
+}
+.recent-img img {
+  width: 90px;
+  height: auto;
+  border-radius: 30px;
+  border-width: thick;
+  border-color: aliceblue;
+  padding: 1rem;
+}
+.recent-likes {
+  font-family: "Fredoka", sans-serif;
+  color: grey;
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 11rem));
+  }
+  .post {
+    font-size: 0.4rem;
+    margin: 0.3rem;
+    padding: 0.7rem;
+  }
+  .posttitle {
+    font-size: 0.9rem;
+  }
+  .postpic img {
+    width: 60px;
+    height: auto;
+    border-radius: 15px;
+    border-width: thick;
+    border-color: aliceblue;
+    padding: 1rem;
+  }
+}
